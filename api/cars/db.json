@@ -29,6 +29,36 @@
             "model": "UX 180h",
             "power": 184,
             "price": 37000
+        },
+        {
+            "brand": "Porsche",
+            "model": "911 Turbo 4S",
+            "power": 400,
+            "price": 120000
+        },
+        {
+            "brand": "Porsche",
+            "model": "Panamara Turbo 4S Hybric",
+            "power": 680,
+            "price": 190000
+        },
+        {
+            "brand": "Mercedes",
+            "model": "AMG GT",
+            "power": 550,
+            "price": 140000
+        },
+        {
+            "brand": "Ford",
+            "model": "Mustang GT",
+            "power": 500,
+            "price": 50000
+        },
+        {
+            "brand": "Audi",
+            "model": "A1 25 TSFI",
+            "power": 115,
+            "price": 22000
         }
     ]
 }

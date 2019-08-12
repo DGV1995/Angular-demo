@@ -18,12 +18,22 @@ export class CarService {
     return this.http.get<Car[]>(this.dataUrl);
   }
 
-  listByName(brand: string): Observable<Car[]> {
+  /*listByName(brand: string): Observable<Car[]> {
     if (!brand.trim()) {
       return this.list();
     }
 
     const url = `${this.dataUrl}?brand_like=${brand}`;
+
+    return this.http.get<Car[]>(url);
+  }*/
+
+  listByBrand(brand: string): Observable<Car[]> {
+    if (brand == "All") {
+      return this.list();
+    } 
+
+    const url = `${this.dataUrl}?brand=${brand}`;
 
     return this.http.get<Car[]>(url);
   }

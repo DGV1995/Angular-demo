@@ -14,11 +14,18 @@ export class CarsContainerComponent implements OnInit {
   constructor(private carService: CarService) {}
 
   ngOnInit() {
-    this.search("");
+    //this.search("");
+    this.carService.list().subscribe(data => this.cars = data);
   }
 
-  search(term: string) {
+  /*search(term: string) {
     this.carService.listByName(term).subscribe(data => this.cars = data);
+  }*/
+
+  searchByBrand(event: any) {
+    // Value of the select element in the html file
+    const brand = event.target.value;
+    this.carService.listByBrand(brand).subscribe(data => this.cars = data);
   }
 
 }

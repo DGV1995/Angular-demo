@@ -21,14 +21,44 @@
         {
             "name": "Eagle",
             "food": "Carnivorous",
-            "family": "Ovoviviparous",
+            "family": "Oviparous",
             "legs": 2
         },
         {
             "name": "Spider",
             "food": "Carnivorous",
-            "family": "Ovoviviparous",
+            "family": "Oviparous",
             "legs": 8
+        },
+        {
+            "name": "Bull",
+            "food": "Herviborous",
+            "family": "Mammal",
+            "legs": 4
+        },
+        {
+            "name": "Duck",
+            "food": "Omnivore",
+            "family": "Oviparous",
+            "legs": 2
+        },
+        {
+            "name": "Gorrion",
+            "food": "Omnivore",
+            "family": "Oviparous",
+            "legs": 2
+        },
+        {
+            "name": "Rabbit",
+            "food": "Herbivorous",
+            "family": "Mammal",
+            "legs": 4
+        },
+        {
+            "name": "Shark",
+            "food": "Carnivorous",
+            "family": "Ovoviviparous",
+            "legs": 1
         }
     ]
 }
