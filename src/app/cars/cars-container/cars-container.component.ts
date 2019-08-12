@@ -14,7 +14,6 @@ export class CarsContainerComponent implements OnInit {
   constructor(private carService: CarService) {}
 
   ngOnInit() {
-    //this.search("");
     this.carService.list().subscribe(data => this.cars = data);
   }
 

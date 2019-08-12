@@ -59,6 +59,30 @@
             "model": "A1 25 TSFI",
             "power": 115,
             "price": 22000
+        },
+        {
+            "brand": "Volvo",
+            "model": "XC90 T5",
+            "power": 254,
+            "price": 70000
+        },
+        {
+            "brand": "Audi",
+            "model": "A4 45 TFSI",
+            "power": 250,
+            "price": 45000
+        },
+        {
+            "brand": "Mercedes",
+            "model": "C Class Coupe 220d",
+            "power": 170,
+            "price": 40000
+        },
+        {
+            "brand": "BMW",
+            "model": "Series 8 Coupe",
+            "power": 550,
+            "price": 160000
         }
     ]
 }

@@ -29,7 +29,7 @@ export class CarService {
   }*/
 
   listByBrand(brand: string): Observable<Car[]> {
-    if (brand == "All") {
+    if (brand == "All" || brand == "") {
       return this.list();
     } 
 
@@ -37,5 +37,4 @@ export class CarService {
 
     return this.http.get<Car[]>(url);
   }
-
 }
