@@ -14,9 +14,11 @@ export class AnimalsContainerComponent implements OnInit {
   constructor(private animalsService: AnimalsService) {}
 
   ngOnInit() {
-    this.animalsService.list().subscribe(
-      data => this.animals = data
-    );
+    this.search("");
+  }
+
+  search(term: string) {
+    this.animalsService.listByName(term).subscribe(data => this.animals = data);
   }
 
 }

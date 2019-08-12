@@ -17,4 +17,14 @@ export class AnimalsService {
     return this.http.get<Animal[]>(this.animalsURL);
   }
 
+  listByName(name: string): Observable<Animal[]> {
+    if (!name.trim()) {
+      return this.list();
+    }
+
+    const url = `${this.animalsURL}?name_like=${name}`;
+    
+    return this.http.get<Animal[]>(url);
+  }
+
 }
