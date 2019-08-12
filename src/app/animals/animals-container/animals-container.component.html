@@ -1,0 +1,18 @@
+<table class="table table-bordered table-striped">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Name</th>
+            <th>Alimentation</th>
+            <th>Family</th>
+            <th>Legs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let animal of animals">
+            <td>{{animal.name}}</td>
+            <td>{{animal.food}}</td>
+            <td>{{animal.family}}</td>
+            <td>{{animal.legs}}</td>
+        </tr>
+    </tbody>
+</table>

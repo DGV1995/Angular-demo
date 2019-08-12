@@ -1,0 +1,34 @@
+{
+    "cars": [
+        {
+            "brand": "Mercedes Benz",
+            "model": "A Class 200",
+            "power": 163,
+            "price": 32000
+        },
+        {
+            "brand": "Audi",
+            "model": "A3 40TFSI",
+            "power": 140,
+            "price": 30000
+        },
+        {
+            "brand": "BMW",
+            "model": "Series 1 120i",
+            "power": 184,
+            "price": 33000
+        },
+        {
+            "brand": "Volvo",
+            "model": "S60 T5",
+            "power": 254,
+            "price": 40000
+        },
+        {
+            "brand": "Lexus",
+            "model": "UX 180h",
+            "power": 184,
+            "price": 37000
+        }
+    ]
+}

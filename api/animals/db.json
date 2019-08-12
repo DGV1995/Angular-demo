@@ -1,0 +1,34 @@
+{
+    "animals": [
+        {
+            "name": "Dog",
+            "food": "Omnivore",
+            "family": "Mammal",
+            "legs": 4
+        },
+        {
+            "name": "Cat",
+            "food": "Carnivorous",
+            "family": "Mammal",
+            "legs": 4
+        },
+        {
+            "name": "Lion",
+            "food": "Carnivorous",
+            "family": "Mammal",
+            "legs": 4
+        },
+        {
+            "name": "Eagle",
+            "food": "Carnivorous",
+            "family": "Ovoviviparous",
+            "legs": 2
+        },
+        {
+            "name": "Spider",
+            "food": "Carnivorous",
+            "family": "Ovoviviparous",
+            "legs": 8
+        }
+    ]
+}
