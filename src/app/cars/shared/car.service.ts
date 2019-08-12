@@ -29,7 +29,7 @@ export class CarService {
   }*/
 
   listByBrand(brand: string): Observable<Car[]> {
-    if (brand == "All" || brand == "") {
+    if (brand == "") {
       return this.list();
     } 
 
