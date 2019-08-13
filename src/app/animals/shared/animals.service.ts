@@ -17,13 +17,29 @@ export class AnimalsService {
     return this.http.get<Animal[]>(this.animalsURL);
   }
 
-  listByName(name: string): Observable<Animal[]> {
+  /*listByName(name: string): Observable<Animal[]> {
     if (!name.trim()) {
       return this.list();
     }
 
     const url = `${this.animalsURL}?name_like=${name}`;
     
+    return this.http.get<Animal[]>(url);
+  }*/
+
+  listByAlimentationAndFamily(alimentation: string, family: string): Observable<Animal[]> {
+    let url: string;
+
+    if (alimentation == null  && family != null) {
+      url = `${this.animalsURL}?family=${family}`;
+    } else if (alimentation != "" && family == "") {
+      url =  `${this.animalsURL}?food=${alimentation}`;
+    } else if (alimentation == null && family == null) {
+      return this.list();
+    } else {
+      url = `${this.animalsURL}?food=${alimentation}&family=${family}`;
+    }
+
     return this.http.get<Animal[]>(url);
   }
 

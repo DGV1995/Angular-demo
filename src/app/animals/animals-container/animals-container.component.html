@@ -1,7 +1,26 @@
-<div class="input-group fluid">
+<!-- <div class="input-group fluid">
     <input type="text" #searchBox name="searchBox" placeholder="Search" (keyup)="search(searchBox.value)"/>
-</div>
-<table class="table table-bordered table-striped">
+</div> -->
+
+<form (ngSubmit)="search()">
+    <label for="alimentation">Alimentation: </label>
+    <select name="alimentation" [(ngModel)]="alimentation">
+        <option value="Omnivore">Omnivore</option>
+        <option value="Carnivorous">Carnivorous</option>
+        <option value="Herbivorous">Herbivorous</option>
+    </select>
+
+    <label for="family">Family</label>
+    <select name="family" class="my-4" [(ngModel)]="family">
+        <option value="Mammal">Mammal</option>
+        <option value="Oviparous">Oviparous</option>
+        <option value="Ovoviviparous">Ovoviviparous</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary btn-xs">Search</button>
+</form>
+
+<table class="table table-bordered table-striped mx-2">
     <thead class="thead-inverse">
         <tr>
             <th>Name</th>

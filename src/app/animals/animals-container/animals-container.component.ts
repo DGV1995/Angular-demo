@@ -7,18 +7,23 @@ import { AnimalsService } from '../shared/animals.service'
   templateUrl: './animals-container.component.html',
   styleUrls: ['./animals-container.component.css']
 })
+
 export class AnimalsContainerComponent implements OnInit {
 
   animals: Animal[];
 
+  alimentation: string;
+  family: string
+
   constructor(private animalsService: AnimalsService) {}
 
   ngOnInit() {
-    this.search("");
+    this.search();
   }
 
-  search(term: string) {
-    this.animalsService.listByName(term).subscribe(data => this.animals = data);
+  search() {
+    //this.animalsService.listByName(term).subscribe(data => this.animals = data);
+    this.animalsService.listByAlimentationAndFamily(this.alimentation, this.family).subscribe(data => this.animals = data);
   }
 
 }
