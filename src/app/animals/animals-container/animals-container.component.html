@@ -2,23 +2,20 @@
     <input type="text" #searchBox name="searchBox" placeholder="Search" (keyup)="search(searchBox.value)"/>
 </div> -->
 
-<form (ngSubmit)="search()">
-    <label for="alimentation">Alimentation: </label>
-    <select name="alimentation" [(ngModel)]="alimentation">
-        <option value="Omnivore">Omnivore</option>
-        <option value="Carnivorous">Carnivorous</option>
-        <option value="Herbivorous">Herbivorous</option>
-    </select>
-
-    <label for="family">Family</label>
-    <select name="family" class="my-4" [(ngModel)]="family">
-        <option value="Mammal">Mammal</option>
-        <option value="Oviparous">Oviparous</option>
-        <option value="Ovoviviparous">Ovoviviparous</option>
-    </select>
-
-    <button type="submit" class="btn btn-primary btn-xs">Search</button>
-</form>
+<label><b>Alimentation</b></label>
+<select searchable="Search..." [(ngModel)]="alimentation">
+    <option value="Omnivore">Omnivore</option>
+    <option value="Carnivorous">Carnivorous</option>
+    <option value="Herbivorous">Herbivorous</option>
+</select>
+    
+<label><b>Family</b></label>
+<select [(ngModel)]="family">
+    <option value="Mammal">Mammal</option>
+    <option value="Oviparous">Oviparous</option>
+    <option value="Ovoviviparous">Ovoviviparous</option>
+</select>
+<button (click)="search()" class="btn btn-primary btn-xs">Search</button>
 
 <table class="table table-bordered table-striped mx-2">
     <thead class="thead-inverse">

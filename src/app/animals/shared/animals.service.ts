@@ -32,7 +32,7 @@ export class AnimalsService {
 
     if (alimentation == null  && family != null) {
       url = `${this.animalsURL}?family=${family}`;
-    } else if (alimentation != "" && family == "") {
+    } else if (alimentation != null && family == null) {
       url =  `${this.animalsURL}?food=${alimentation}`;
     } else if (alimentation == null && family == null) {
       return this.list();
